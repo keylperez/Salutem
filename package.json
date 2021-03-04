@@ -1,0 +1,19 @@
+{
+  "name": "salutem",
+  "version": "1.0.0",
+  "description": "apple cider vinegar product selling",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keylperez/Salutem.git"
+  },
+  "author": "keylperez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keylperez/Salutem/issues"
+  },
+  "homepage": "https://github.com/keylperez/Salutem#readme"
+}
