@@ -1,0 +1,52 @@
+#logo {
+  width: 240px;
+  vertical-align: middle;
+  margin: 3px 21px;
+}
+header {
+  nav {
+    div {
+      float: left;
+      width: 282px;
+      height: 108px;
+      margin: 0 0px 0 200px;
+      background-color: var(--primary-color);
+      border-bottom-left-radius: 25px;
+      border-bottom-right-radius: 25px;
+    }
+  }
+
+  div {
+    p {
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      font-size: 53px;
+    }
+
+    button {
+      margin-top: 30px;
+      font-size: 300%;
+      width: 423px;
+      height: 129px;
+      font-weight: 550;
+      @include buttons;
+      &:hover {
+        @include buttonHover;
+      }
+    }
+  }
+}
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  list-style: none;
+  align-items: center;
+  margin: 25px -5px;
+}
+
+.flexboxItem {
+  margin: 0px 63.5px;
+  font-size: 43px;
+}

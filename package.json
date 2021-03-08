@@ -4,7 +4,8 @@
   "description": "apple cider vinegar product selling",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:scss": "node-sass src/sass/main.scss src/css/style.css",
+    "watch:scss": "node-sass src/sass/main.scss src/css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/keylperez/Salutem/issues"
   },
-  "homepage": "https://github.com/keylperez/Salutem#readme"
+  "homepage": "https://github.com/keylperez/Salutem#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
 }

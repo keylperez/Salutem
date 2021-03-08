@@ -1,0 +1,101 @@
+:root {
+  --primary-color-dark: #a4670c;
+  --primary-color: #f3b455;
+  --primary-color-light: #f9d7a4;
+  --primary-color-dark-rgb: 164, 103, 12;
+  --primary-color-rgb: 243, 180, 85;
+  --primary-color-light-rgb: 249, 215, 164;
+  --second-color-dark: #383a3c;
+  --second-color: #71767a;
+  --second-color-light: #a5a9ac;
+  --second-color-dark-rgb: 56, 58, 60;
+  --second-color-rgb: 113, 118, 122;
+  --second-color-light-rgb: 165, 169, 172;
+  --third-color-dark: #bbbbbb;
+  --third-color: #ffffff;
+  --third-color-dark-rgb: 187, 187, 187;
+  --third-color-rgb: 255, 255, 255;
+  --bt-border-color: #c2cbd2; }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box; }
+
+body {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  line-height: 1.6;
+  font-weight: 400;
+  background-image: url(/src/img/27368508_2076862719202165_7444710958030010926_o.jpg);
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+header nav {
+  width: 100%;
+  height: 122px;
+  display: inline-block;
+  position: sticky;
+  background-color: rgba(var(--second-color-rgb), 0.5);
+  color: #c8dad9; }
+  header nav a {
+    text-decoration: none;
+    color: #c8dad9; }
+
+header div {
+  justify-content: left;
+  margin: 161px 54px 20px 54px;
+  width: 749px;
+  color: #666666;
+  line-height: 62px; }
+
+#logo {
+  width: 240px;
+  vertical-align: middle;
+  margin: 3px 21px; }
+
+header nav div {
+  float: left;
+  width: 282px;
+  height: 108px;
+  margin: 0 0px 0 200px;
+  background-color: var(--primary-color);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px; }
+
+header div p {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 53px; }
+
+header div button {
+  margin-top: 30px;
+  font-size: 300%;
+  width: 423px;
+  height: 129px;
+  font-weight: 550;
+  border-radius: 100px;
+  background-color: var(--primary-color);
+  border: 4px solid var(--bt-border-color); }
+  header div button:hover {
+    border-radius: 100px;
+    background-color: var(--bt-border-color);
+    border: 4px solid var(--primary-color);
+    cursor: pointer;
+    outline: none; }
+
+#navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  list-style: none;
+  align-items: center;
+  margin: 25px -5px; }
+
+.flexboxItem {
+  margin: 0px 63.5px;
+  font-size: 43px; }

@@ -1,0 +1,23 @@
+header {
+  nav {
+    width: 100%;
+    height: 122px;
+    display: inline-block;
+    position: sticky;
+    background-color: rgba(var(--second-color-rgb), 0.5);
+    color: #c8dad9;
+
+    a {
+      @include linkUnderline;
+      color: #c8dad9;
+    }
+  }
+
+  div {
+    justify-content: left;
+    margin: 161px 54px 20px 54px;
+    width: 749px;
+    color: #666666;
+    line-height: 62px;
+  }
+}

@@ -1,0 +1,17 @@
+@mixin linkUnderline {
+  text-decoration: none;
+}
+
+@mixin buttons {
+  border-radius: 100px;
+  background-color: var(--primary-color);
+  border: 4px solid var(--bt-border-color);
+}
+
+@mixin buttonHover {
+  border-radius: 100px;
+  background-color: var(--bt-border-color);
+  border: 4px solid var(--primary-color);
+  cursor: pointer;
+  outline: none;
+}
