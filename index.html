@@ -7,6 +7,7 @@
     <link rel="icon" href="src/img/salutem logo.png">
     <title>SALUTEM</title>
     <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="/src/js/index.js"></script>
 </head>
 <body>
     <header>
@@ -22,15 +23,328 @@
                 <li class="navList flexboxItem"><a href="">About Us</a></li>
             </ul>
         </nav>
-        <div>
+        <div class="fakeNav"></div>
+        <div class="headerCont">
             <p>
             SALUTEM latin for health. Apple Cider Vinegar with the Mother is raw, unfiltered & unpasteurized contain beneficial properties for health and culinary use.
             SALUTEM is God's grace for wellness.
         </p>
         <button>Order Now</button>
         </div>
-        
-        
     </header>
+    <div class="productGrid">
+        <button class="arrowButt" id="arrowButt-left"><img class="arrow-icon arrow-icon-left" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ5Mi4wMDQgNDkyLjAwNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGcgdHJhbnNmb3JtPSJtYXRyaXgoLTEsMS4yMjQ2NDY3OTkxNDczNTMyZS0xNiwtMS4yMjQ2NDY3OTkxNDczNTMyZS0xNiwtMSw0OTIuMDA0MDU4ODM3ODkwNzQsNDkyLjAwMzk2NzI4NTE1NjIpIj4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KCTxnPgoJCTxwYXRoIGQ9Ik0zODIuNjc4LDIyNi44MDRMMTYzLjczLDcuODZDMTU4LjY2NiwyLjc5MiwxNTEuOTA2LDAsMTQ0LjY5OCwwcy0xMy45NjgsMi43OTItMTkuMDMyLDcuODZsLTE2LjEyNCwxNi4xMiAgICBjLTEwLjQ5MiwxMC41MDQtMTAuNDkyLDI3LjU3NiwwLDM4LjA2NEwyOTMuMzk4LDI0NS45bC0xODQuMDYsMTg0LjA2Yy01LjA2NCw1LjA2OC03Ljg2LDExLjgyNC03Ljg2LDE5LjAyOCAgICBjMCw3LjIxMiwyLjc5NiwxMy45NjgsNy44NiwxOS4wNGwxNi4xMjQsMTYuMTE2YzUuMDY4LDUuMDY4LDExLjgyNCw3Ljg2LDE5LjAzMiw3Ljg2czEzLjk2OC0yLjc5MiwxOS4wMzItNy44NkwzODIuNjc4LDI2NSAgICBjNS4wNzYtNS4wODQsNy44NjQtMTEuODcyLDcuODQ4LTE5LjA4OEMzOTAuNTQyLDIzOC42NjgsMzg3Ljc1NCwyMzEuODg0LDM4Mi42NzgsMjI2LjgwNHoiIGZpbGw9IiM4YzhkOGYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiIGNsYXNzPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+" /></button>
+        <div class="grid-container" id="grid-container-left">
+            <div class="grid-item grid-item-1">
+                <div class="productDetails">
+                    <img src="src/img/116491696_2765859793635784_7070023600114636186_n.jpg" alt="Product Image" class="productImg">
+                    <div class="productDescript"><span>Sesame Seed Paste</span></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-2">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-3">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-4">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-5">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-6">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-7">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-8">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-9">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-10">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-11">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-12">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-13">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-14">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-15">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-16">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-17">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-18">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-19">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-20">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-21">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-22">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-23">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-24">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-25">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-container" id="grid-container-right">
+            <div class="grid-item grid-item-26">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-27">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-28">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-29">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-30">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-31">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-32">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-33">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-34">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-35">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-36">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-37">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-38">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-39">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-40">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-41">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-42">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-43">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-44">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-45">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-46">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-47">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-48">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-49">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+            <div class="grid-item grid-item-50">
+                <div class="productDetails">
+                    <img src="" alt="Product Image" class="productImg">
+                    <div class="productDescript"></div>
+                </div>
+            </div>
+        </div>
+        <button class="arrowButt" id="arrowButt-right"><img class="arrow-icon arrow-icon-right" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDQ5Mi4wMDQgNDkyLjAwNCIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNMzgyLjY3OCwyMjYuODA0TDE2My43Myw3Ljg2QzE1OC42NjYsMi43OTIsMTUxLjkwNiwwLDE0NC42OTgsMHMtMTMuOTY4LDIuNzkyLTE5LjAzMiw3Ljg2bC0xNi4xMjQsMTYuMTIgICAgYy0xMC40OTIsMTAuNTA0LTEwLjQ5MiwyNy41NzYsMCwzOC4wNjRMMjkzLjM5OCwyNDUuOWwtMTg0LjA2LDE4NC4wNmMtNS4wNjQsNS4wNjgtNy44NiwxMS44MjQtNy44NiwxOS4wMjggICAgYzAsNy4yMTIsMi43OTYsMTMuOTY4LDcuODYsMTkuMDRsMTYuMTI0LDE2LjExNmM1LjA2OCw1LjA2OCwxMS44MjQsNy44NiwxOS4wMzIsNy44NnMxMy45NjgtMi43OTIsMTkuMDMyLTcuODZMMzgyLjY3OCwyNjUgICAgYzUuMDc2LTUuMDg0LDcuODY0LTExLjg3Miw3Ljg0OC0xOS4wODhDMzkwLjU0MiwyMzguNjY4LDM4Ny43NTQsMjMxLjg4NCwzODIuNjc4LDIyNi44MDR6IiBmaWxsPSIjOGM4ZDhmIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BhdGg+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==" /></button>
+        
+    </div>
+    <footer class="grid-footer">
+        <svg class="icon icon-facebook">
+            <use xlink:href="/src/sprite.svg#icon-facebook-official"></use>
+        </svg>
+    </footer>
 </body>
 </html>

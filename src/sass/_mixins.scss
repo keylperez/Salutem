@@ -4,14 +4,15 @@
 
 @mixin buttons {
   border-radius: 100px;
-  background-color: var(--primary-color);
-  border: 4px solid var(--bt-border-color);
+  background-color: $primary-color;
+  border: 4px solid $bt-border-color;
+  outline: none;
 }
 
 @mixin buttonHover {
   border-radius: 100px;
-  background-color: var(--bt-border-color);
-  border: 4px solid var(--primary-color);
+  background-color: $bt-border-color;
+  border: 4px solid $primary-color;
   cursor: pointer;
   outline: none;
 }

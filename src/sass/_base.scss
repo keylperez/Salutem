@@ -1,25 +1,15 @@
-:root {
-  --primary-color-dark: #a4670c;
-  --primary-color: #f3b455;
-  --primary-color-light: #f9d7a4;
-  --primary-color-dark-rgb: 164, 103, 12;
-  --primary-color-rgb: 243, 180, 85;
-  --primary-color-light-rgb: 249, 215, 164;
+$primary-color-dark: #a4670c;
+$primary-color: #f3b455;
+$primary-color-light: #f9d7a4;
 
-  --second-color-dark: #383a3c;
-  --second-color: #71767a;
-  --second-color-light: #a5a9ac;
-  --second-color-dark-rgb: 56, 58, 60;
-  --second-color-rgb: 113, 118, 122;
-  --second-color-light-rgb: 165, 169, 172;
+$second-color-dark: #383a3c;
+$second-color: #71767a;
+$second-color-light: #a5a9ac;
 
-  --third-color-dark: #bbbbbb;
-  --third-color: #ffffff;
-  --third-color-dark-rgb: 187, 187, 187;
-  --third-color-rgb: 255, 255, 255;
+$third-color-dark: #bbbbbb;
+$third-color: #ffffff;
 
-  --bt-border-color: #c2cbd2;
-}
+$bt-border-color: #c2cbd2;
 
 *,
 *::before,
@@ -37,7 +27,5 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   line-height: 1.6;
   font-weight: 400;
-  background-image: url(/src/img/27368508_2076862719202165_7444710958030010926_o.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: $primary-color;
 }
