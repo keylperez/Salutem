@@ -59,12 +59,7 @@ header {
   gap: 27px;
   width: 1304px;
   margin: 100px auto;
-  overflow-x: auto;
-  overflow-y: hidden;
-  white-space: nowrap;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+  justify-content: center;
   .grid-item {
     background-color: $third-color;
     border: 4px solid $third-color-dark;
@@ -91,8 +86,96 @@ header {
     right: 4%;
     transform: translate(50% -50%);
   }
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
 }
 
-.arrowButt {
-  cursor: pointer;
+#arrowButt {
+  &-left {
+    opacity: 0.5;
+    cursor: no-drop;
+  }
+  &-right {
+    cursor: pointer;
+  }
+}
+
+.icon {
+  fill: $second-color-light;
+  width: 50px;
+  height: 50px;
+  &:hover {
+    transition: 0.3s;
+    transform: scale(1.2);
+  }
+  &-facebook {
+    &:hover {
+      fill: #1877f2;
+    }
+  }
+  &-instagram {
+    &:hover {
+      fill: #e4405f;
+    }
+  }
+  &-twitter {
+    &:hover {
+      fill: #1da1f2;
+    }
+  }
+  &-discord {
+    &:hover {
+      fill: #7289da;
+    }
+  }
+}
+
+.footer {
+  padding: 15px;
+  position: relative;
+  bottom: 0;
+  display: grid;
+  color: $second-color-light;
+  background-color: $second-color-dark;
+  width: 100%;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  gap: 10px;
+  justify-content: center;
+  grid-template-areas:
+    "icon links right-side"
+    "content";
+  &-item {
+    &-1 {
+      grid-area: "icon";
+      align-self: end;
+      justify-self: start;
+    }
+    &-2 {
+      grid-area: "links";
+      align-self: end;
+      justify-self: center;
+    }
+    &-3 {
+      grid-area: "right-side";
+    }
+    &-4 {
+      grid-column: 1 / -1;
+      grid-area: "content";
+      justify-self: center;
+      align-self: end;
+    }
+  }
+}
+
+.listItem {
+  list-style: none;
+  display: inline;
+  margin: auto 4px;
+}
+
+.footer-links {
+  @include linkUnderline;
+  color: $second-color-light;
 }
