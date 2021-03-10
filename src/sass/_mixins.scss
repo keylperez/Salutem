@@ -15,6 +15,8 @@
   border: 4px solid $primary-color;
   cursor: pointer;
   outline: none;
+  transition: 0.4s ease-in-out;
+  color: $primary-color-dark;
 }
 
 @mixin respond($breakpoint) {

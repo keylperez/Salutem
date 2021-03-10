@@ -18,7 +18,8 @@ body {
 body header {
   background-image: url(/src/img/27368508_2076862719202165_7444710958030010926_o.jpg);
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  height: 1000px; }
   body header nav {
     width: 100%;
     height: 100px;
@@ -44,11 +45,13 @@ body footer {
   margin: 0px 0px 20px 54px;
   width: 650px;
   color: #666666;
-  line-height: 62px; }
+  line-height: 50px; }
 
 .productGrid {
   position: relative;
-  width: 100%; }
+  width: 100%;
+  display: grid;
+  grid-template-areas: "left-arrow productGrid left-arrow"; }
 
 #grid-container-right {
   display: none; }
@@ -62,14 +65,14 @@ header nav div {
   float: left;
   width: 240px;
   height: 90px;
-  margin: 0 0px 0 200px;
+  margin: 0 0px 0 100px;
   background-color: #f3b455;
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px; }
 
 header div p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 40px; }
+  font-size: 30px; }
 
 header div button {
   margin-top: 30px;
@@ -84,12 +87,12 @@ header div button {
   border: 4px solid #c2cbd2;
   outline: none; }
   header div button:hover {
-    transition: 0.4s ease-in-out;
     border-radius: 100px;
     background-color: #c2cbd2;
     border: 4px solid #f3b455;
     cursor: pointer;
     outline: none;
+    transition: 0.4s ease-in-out;
     color: #a4670c; }
 
 #navbar {
@@ -103,23 +106,32 @@ header div button {
 
 .flexboxItem {
   margin: 0px 25px;
-  font-size: 43px; }
+  font-size: 35px; }
 
 .grid-container {
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(5, 235px);
-  grid-template-rows: repeat(5, 300px);
+  grid-template-columns: repeat(5, 150px);
+  grid-template-rows: repeat(5, 200px);
   gap: 27px;
-  width: 1304px;
   margin: 100px auto;
-  justify-content: center; }
+  justify-content: center;
+  grid-area: "productGrid"; }
   .grid-container .grid-item {
     background-color: #ffffff;
     border: 4px solid #bbbbbb; }
     .grid-container .grid-item .productImg {
-      width: 208px;
-      height: 208px;
+      width: 120px;
+      height: 120px;
       margin: 10px; }
+    .grid-container .grid-item .productDescript {
+      justify-self: center; }
+
+.productDetails {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto;
+  grid-template-rows: 3fr 1fr; }
 
 .arrow-icon {
   width: 75px;
@@ -128,27 +140,29 @@ header div button {
     position: absolute;
     top: 50%;
     transform: translate(-50% -50%);
-    left: 1%; }
+    left: 5%; }
   .arrow-icon-right {
     position: absolute;
     top: 50%;
-    right: 1%;
+    right: 5%;
     transform: translate(50% -50%); }
   .arrow-icon:hover {
     transform: scale(1.1);
     transition: 0.3s; }
 
 #arrowButt-left {
+  grid-area: "left-arrow";
   opacity: 0.5;
   cursor: no-drop; }
 
 #arrowButt-right {
+  grid-area: "right-arrow";
   cursor: pointer; }
 
 .icon {
   fill: #a5a9ac;
-  width: 50px;
-  height: 50px; }
+  width: 30px;
+  height: 30px; }
   .icon:hover {
     transition: 0.3s;
     transform: scale(1.2); }

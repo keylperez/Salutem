@@ -3,6 +3,7 @@ body {
     background-image: url(/src/img/27368508_2076862719202165_7444710958030010926_o.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    height: 1000px;
     nav {
       width: 100%;
       height: 100px;
@@ -11,7 +12,6 @@ body {
       background-color: rgba($second-color, 0.5);
       color: #c8dad9;
       z-index: 100;
-
       a {
         @include linkUnderline;
         color: #c8dad9;
@@ -35,12 +35,14 @@ body {
   margin: 0px 0px 20px 54px;
   width: 650px;
   color: #666666;
-  line-height: 62px;
+  line-height: 50px;
 }
 
 .productGrid {
   position: relative;
   width: 100%;
+  display: grid;
+  grid-template-areas: "left-arrow productGrid left-arrow";
 }
 
 #grid-container-right {
