@@ -1,5 +1,5 @@
 #logo {
-  width: 240px;
+  width: 200px;
   vertical-align: middle;
   margin: 3px 21px;
 }
@@ -7,8 +7,8 @@ header {
   nav {
     div {
       float: left;
-      width: 282px;
-      height: 108px;
+      width: 240px;
+      height: 90px;
       margin: 0 0px 0 200px;
       background-color: $primary-color;
       border-bottom-left-radius: 25px;
@@ -19,19 +19,22 @@ header {
   div {
     p {
       font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-      font-size: 53px;
+      font-size: 40px;
     }
 
     button {
       margin-top: 30px;
       margin-bottom: 200px;
-      font-size: 300%;
-      width: 423px;
-      height: 129px;
+      font-size: 200%;
+      width: 350px;
+      height: 100px;
       font-weight: 550;
+      color: $second-color-dark;
       @include buttons;
       &:hover {
+        transition: 0.4s ease-in-out;
         @include buttonHover;
+        color: $primary-color-dark;
       }
     }
   }
@@ -44,11 +47,11 @@ header {
   justify-content: flex-end;
   list-style: none;
   align-items: center;
-  margin: 25px -5px;
+  margin: 15px -5px;
 }
 
 .flexboxItem {
-  margin: 0px 63.5px;
+  margin: 0px 25px;
   font-size: 43px;
 }
 
@@ -72,18 +75,18 @@ header {
 }
 
 .arrow-icon {
-  width: 136px;
+  width: 75px;
   height: auto;
   &-left {
     position: absolute;
     top: 50%;
     transform: translate(-50% -50%);
-    left: 4%;
+    left: 1%;
   }
   &-right {
     position: absolute;
     top: 50%;
-    right: 4%;
+    right: 1%;
     transform: translate(50% -50%);
   }
   &:hover {

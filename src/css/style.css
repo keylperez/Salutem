@@ -21,7 +21,7 @@ body header {
   background-repeat: no-repeat; }
   body header nav {
     width: 100%;
-    height: 122px;
+    height: 100px;
     display: inline-block;
     position: fixed;
     background-color: rgba(113, 118, 122, 0.5);
@@ -33,14 +33,16 @@ body header {
 
 body footer {
   background-color: #71767a; }
+  body footer a {
+    text-decoration: none; }
 
 .fakeNav {
   height: 200px; }
 
 .headerCont {
   justify-content: left;
-  margin: 0px 54px 20px 54px;
-  width: 749px;
+  margin: 0px 0px 20px 54px;
+  width: 650px;
   color: #666666;
   line-height: 62px; }
 
@@ -52,14 +54,14 @@ body footer {
   display: none; }
 
 #logo {
-  width: 240px;
+  width: 200px;
   vertical-align: middle;
   margin: 3px 21px; }
 
 header nav div {
   float: left;
-  width: 282px;
-  height: 108px;
+  width: 240px;
+  height: 90px;
   margin: 0 0px 0 200px;
   background-color: #f3b455;
   border-bottom-left-radius: 25px;
@@ -67,25 +69,28 @@ header nav div {
 
 header div p {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 53px; }
+  font-size: 40px; }
 
 header div button {
   margin-top: 30px;
   margin-bottom: 200px;
-  font-size: 300%;
-  width: 423px;
-  height: 129px;
+  font-size: 200%;
+  width: 350px;
+  height: 100px;
   font-weight: 550;
+  color: #383a3c;
   border-radius: 100px;
   background-color: #f3b455;
   border: 4px solid #c2cbd2;
   outline: none; }
   header div button:hover {
+    transition: 0.4s ease-in-out;
     border-radius: 100px;
     background-color: #c2cbd2;
     border: 4px solid #f3b455;
     cursor: pointer;
-    outline: none; }
+    outline: none;
+    color: #a4670c; }
 
 #navbar {
   display: flex;
@@ -94,10 +99,10 @@ header div button {
   justify-content: flex-end;
   list-style: none;
   align-items: center;
-  margin: 25px -5px; }
+  margin: 15px -5px; }
 
 .flexboxItem {
-  margin: 0px 63.5px;
+  margin: 0px 25px;
   font-size: 43px; }
 
 .grid-container {
@@ -117,17 +122,17 @@ header div button {
       margin: 10px; }
 
 .arrow-icon {
-  width: 136px;
+  width: 75px;
   height: auto; }
   .arrow-icon-left {
     position: absolute;
     top: 50%;
     transform: translate(-50% -50%);
-    left: 4%; }
+    left: 1%; }
   .arrow-icon-right {
     position: absolute;
     top: 50%;
-    right: 4%;
+    right: 1%;
     transform: translate(50% -50%); }
   .arrow-icon:hover {
     transform: scale(1.1);

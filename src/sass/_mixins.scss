@@ -16,3 +16,25 @@
   cursor: pointer;
   outline: none;
 }
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    //37.5em -> 600px
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    //56.25em->900px
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+  @if $breakpoint == tab-land {
+    //75em->1200px
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+}
